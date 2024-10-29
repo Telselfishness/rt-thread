@@ -1,0 +1,34 @@
+menu "Hardware Drivers Config"
+
+config SOC_STM32F407ZE
+    bool
+    select SOC_SERIES_STM32F4
+    select RT_USING_COMPONENTS_INIT
+    select RT_USING_USER_MAIN
+    default y
+
+menu "Onboard Peripheral Drivers"
+
+endmenu
+
+menu "On-chip Peripheral Drivers"
+
+    config BSP_USING_GPIO
+        bool "Enable GPIO"
+        select RT_USING_PIN
+        default y
+
+    config BSP_USING_UART4
+        bool "Enable UART4"
+        select RT_USING_SERIAL
+        default y
+
+    source "$(BSP_DIR)/../libraries/HAL_Drivers/drivers/Kconfig"
+
+endmenu
+
+menu "Board extended module Drivers"
+
+endmenu
+
+endmenu
