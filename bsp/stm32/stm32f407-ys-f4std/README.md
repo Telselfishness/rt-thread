@@ -2,7 +2,7 @@
 
 ## 简介
 
-本文档为 xxx 开发板的 BSP (板级支持包) 说明。
+本文档为 硬石电子YS-F4STD 开发板的 BSP (板级支持包) 说明。
 
 主要内容如下：
 
@@ -18,20 +18,19 @@
 
 开发板外观如下图所示：
 
-![board](figures/board.png)
 
 该开发板常用 **板载资源** 如下：
 
-- MCU：STM32xxx，主频 xxxMHz，xxxKB FLASH ，xxxKB RAM
-- 外部 RAM：型号，xMB
-- 外部 FLASH：型号，xMB
+- MCU：STM32F407ZET6，主频 168MHz，512KB FLASH ，128KB RAM
+- 外部 RAM：24C64，xMB
+- 外部 FLASH：25Q128，xMB
 - 常用外设
-  - LED：x个，DS0（红色，PB1），DS1（绿色，PB0）
-  - 按键：x个，K0（兼具唤醒功能，PA0），K1（PC13）
-- 常用接口：USB 转串口、SD 卡接口、以太网接口、LCD 接口等
-- 调试接口，标准 JTAG/SWD
+  - LED：2个，DS0（红色，PA0），DS1（绿色，PA3）
+  - 按键：4个，K1（PG15），K2（PG12），K3（PG10），K4（PG8）
+- 常用接口：USB 转串口、以太网接口、LCD 接口、CAN接口、485接口等
+- 调试接口，标准 SWD
 
-开发板更多详细信息请参考【厂商名】 [xxx开发板介绍](https://xxx)。
+开发板更多详细信息请参考【厂商名】 [硬石电子F4STD开发板淘宝页面](https://item.taobao.com/item.htm?id=698655321757&scene=taobao_shop&spm=a1z10.1-c.w5003-17146721011.4.bd5c12044jCYuY)。
 
 ## 外设支持
 
